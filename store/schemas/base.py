@@ -10,7 +10,7 @@ class BaseSchemaMixin(BaseModel):
         from_attributes = True
 
 
-class OutMixin(BaseModel):
+class OutSchema(BaseModel):
     id: UUID4 = Field()
     created_at: datetime = Field()
     updated_at: datetime = Field()
